@@ -11,7 +11,7 @@ const Navbar = () => {
   const handleLogOut = () => {
     logOut()
       .then(() => {
-        //
+        // 
         console.log("logged out");
       })
       .catch((error) => console.log(error));
@@ -32,10 +32,7 @@ const Navbar = () => {
       </li>
 
       <li>
-        <Link to="dashboard">Dashboard</Link>
-      </li>
-      <li>
-        <Link to="/">
+        <Link to="dashboard">
           <button className="btn btn-neutral -mt-3">
             <FaShoppingCart />
             <div className="badge badge-secondary">+{cart?.length || 0}</div>
